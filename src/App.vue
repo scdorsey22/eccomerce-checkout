@@ -1,6 +1,7 @@
 <!-- src/App.vue -->
 <template>
   <div id="app">
+    <cart-icon></cart-icon>
     <h1>Coffee Shop</h1>
     <div class="coffee-products">
       <coffee-product v-for="(product, index) in products" :key="index" :product="product"></coffee-product>
@@ -10,12 +11,14 @@
 </template>
 
 <script>
+import CartIcon from './components/CartIcon.vue';
 import CoffeeProduct from "./components/CoffeeProduct.vue";
 import ShoppingCart from "./components/ShoppingCart.vue";
 
 export default {
   name: "App",
   components: {
+    CartIcon,
     CoffeeProduct,
     ShoppingCart,
   },

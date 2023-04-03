@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ShoppingView from "../views/ShoppingView.vue"; // Import the ShoppingView
+import CartView from "../views/CartView.vue"
 
 const routes = [
   {
@@ -17,6 +18,11 @@ const routes = [
     path: "/shop", // Add a new route for the ShoppingView
     name: "shop",
     component: ShoppingView,
+  },
+  {
+    path: "/cart",
+    name: "cart",
+    component: CartView,
   },
 ];
 
