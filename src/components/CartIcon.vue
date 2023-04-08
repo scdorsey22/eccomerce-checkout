@@ -1,7 +1,7 @@
 <!-- src/components/CartIcon.vue -->
 <template>
   <div class="cart-icon" @click="$router.push('/cart')">
-    <img src="path/to/your/cart-icon-image" alt="Cart" />
+    <img src="/Users/sugashane/Development/code/eccomerce-checkout/src/assets/shopping-cart-outline.svg" alt="Cart" />
     <span class="cart-count" v-if="cartItemCount > 0">{{ cartItemCount }}</span>
   </div>
 </template>
